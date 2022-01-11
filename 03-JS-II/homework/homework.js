@@ -127,7 +127,7 @@ function tieneTresDigitos(numero){
   //Escribe tu código aquíd
    let aux = 0;
    let num = numero;
-   while( num >= 1 || aux !== 4){
+   while( num >= 1 && aux !== 4){
      aux++;
      num /= 10;
    }
