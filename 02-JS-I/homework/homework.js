@@ -169,7 +169,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola ' + nombre;
+  return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -189,7 +189,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  return base * altura;
+  return (base * altura)/2;
 }
 
 
@@ -207,7 +207,7 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-   if(letra.equals('a')||letra.equals('e')||letra.equals('i')||letra.equals('o')||letra.equals('u'))
+   if(letram === 'a'||letra ==='e'||letra === 'i'||letra === 'o'||letra === 'u')
    {return 'Es vocal'}else{return 'Dato incorecto'}
 }
 
