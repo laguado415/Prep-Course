@@ -15,7 +15,6 @@
   },
   "author": "Henry",
   "license": "ISC",
-  "test": "jest",
   "jest": {
     "testURL": "http://localhost/"
   },
