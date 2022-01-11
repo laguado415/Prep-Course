@@ -137,7 +137,7 @@ function doWhile(numero) {
   do{
        srt += 5;
        contador--;
-  }While(contador != 0);
+  }while(contador != 0);
   return srt;
 }
 
