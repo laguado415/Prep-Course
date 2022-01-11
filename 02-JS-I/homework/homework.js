@@ -139,7 +139,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  retunr numeroRandom;
+  
 }
 
 function esPositivo(numero) {
@@ -162,6 +162,7 @@ function combinarNombres(nombre, apellido) {
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
   
+
 }
 
 function obtenerSaludo(nombre) {
