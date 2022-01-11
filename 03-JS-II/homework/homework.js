@@ -131,6 +131,7 @@ function tieneTresDigitos(numero){
      aux++;
      num /= 10;
    }
+   console.log(aux);
    if(aux===3){return true;}else{return false;}
 }
 
