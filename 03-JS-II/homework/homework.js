@@ -32,6 +32,7 @@ function saludo(idioma) {
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
   // Si "idioma" es "mandarin", devuelve "Ni Hao!"
   // Si "idioma" es "ingles", devuelve "Hello!"
+
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if(idioma === 'aleman'){return 'Guten Tag!';}
@@ -131,6 +132,13 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  var contador = 8;
+  var srt = numero;
+  do{
+       srt += 5;
+       contador--;
+  }While(contador === 0);
+  return srt;
 }
 
 
