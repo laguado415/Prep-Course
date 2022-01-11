@@ -126,12 +126,11 @@ function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
    var aux;
-   var num;
+   var num = numero;
    while( num > 0 ){
      aux++;
      num /= 10;
    }
-   console.log(aux);
    if(aux===3){return true;}else{return false;}
 }
 
