@@ -99,6 +99,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  //return Number.isInteger(numero);
   return (Math.floor(numero) === numero)? true : false; 
 }
 
