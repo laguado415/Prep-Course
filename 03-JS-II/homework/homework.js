@@ -15,7 +15,8 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if(edad >= 18){return 'Allowed';}else{return 'Not allowed';}
+  //if(edad >= 18){return 'Allowed';}else{return 'Not allowed';}
+  return (edad >= 18)? 'Allowed' : 'Not allowed';
 }
   
 function conection(status) {
@@ -24,8 +25,9 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if(status === 1){return 'Online';}
-  if(status === 2){return 'Away';}else{return 'Offline';}
+  /*if(status === 1){return 'Online';}
+  if(status === 2){return 'Away';}else{return 'Offline';}*/
+  return (status === 1)? 'Online' : (status === 2)? 'Away' : 'Offline';
 }
 
 function saludo(idioma) {
@@ -36,9 +38,20 @@ function saludo(idioma) {
 
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if(idioma === 'aleman'){return 'Guten Tag!';}
+  /*if(idioma === 'aleman'){return 'Guten Tag!';}
   if(idioma === 'mandarin'){return 'Ni Hao!';}
-  if(idioma === 'ingles'){return 'Hello!';}else{return 'Hola!'}
+  if(idioma === 'ingles'){return 'Hello!';}else{return 'Hola!'}*/
+  switch (idioma){
+     case 'aleman':
+       return 'Guten Tag!';
+     case 'mandarin':
+       return 'Ni Hao!';
+    case 'ingles':
+       return 'Hello!';
+    default :  
+       return 'Hola!';   
+
+  }
 }
 
 function colors(color) {
@@ -50,12 +63,16 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   switch(color){
-    case 'blue': return'This is blue';
-    case 'red': return 'This is red';  
-    case 'green': return 'This is green';  
-    case 'orange': return 'This is orange';    
+    case 'blue': 
+       return'This is blue';
+    case 'red': 
+       return 'This is red';  
+    case 'green': 
+       return 'This is green';  
+    case 'orange': 
+       return 'This is orange';    
     default: 
-         return 'Color not found';
+      return 'Color not found';
   }
 }
 
@@ -63,16 +80,15 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-   var aux = (numero === 10 || numero === 5);
-   return aux;
+  
+   return (numero === 10 || numero === 5);
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  var aux = (numero < 50 && numero > 20);
-   return aux;
+   return (numero < 50 && numero > 20);
 }
 
 function esEntero(numero) {
@@ -121,18 +137,20 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   
+  
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquíd
-   let aux = 0;
+  /*let aux = 0;
    let num = numero;
    while( num >= 1 && aux !== 4){
      aux++;
      num /= 10;
    }
-   if(aux===3){return true;}else{return false;}
+   if(aux===3){return true;}else{return false;}*/
+   return (numero > 99 && numero < 1000)? true : false;
 }
 
 function doWhile(numero) {
