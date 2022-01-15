@@ -123,12 +123,13 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  //return Math.esPrimo(numero);
-
+/*
   for (let i = 2; i < numero ; i++) {
     if (numero % i === 0) {return false}
     }  
-    return (numero > 1)? true : false; 
+    return (numero > 1)? true : false;
+ */    
+  return Math.esPrimo(numero);
 }
 
 function esVerdadero(valor){
